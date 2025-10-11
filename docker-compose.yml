@@ -1,0 +1,80 @@
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.8.4
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "True"
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "True"
+    AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres_db/airflow
+    PIP_ADDITIONAL_REQUIREMENTS: "requests==2.32.3 pandas==2.2.2 psycopg2-binary==2.9.9"
+  volumes:
+    - ./Airflow/dags:/opt/airflow/dags
+    - ./Airflow/logs:/opt/airflow/logs
+    - ./Airflow/plugins:/opt/airflow/plugins
+    - ./:/opt/project
+  depends_on:
+    - postgres_db
+
+services:
+  postgres_db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - ./Data/postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db init
+        airflow users create \
+          --username airflow \
+          --firstname Air \
+          --lastname Flow \
+          --role Admin \
+          --email admin@example.com \
+          --password airflow
+    restart: "no"
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    restart: always
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    restart: always
+
+  pgadmin:                      # ← ICI : même niveau que les autres services
+    image: dpage/pgadmin4:7
+    container_name: pgadmin
+    depends_on:
+      - postgres_db
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    volumes:
+      - ./Data/pgadmin:/var/lib/pgadmin
+
+  # optionnel : runner “one-shot”
+  etl-worker:
+    image: apache/airflow:2.8.4
+    working_dir: /opt/project
+    environment:
+      PIP_ADDITIONAL_REQUIREMENTS: "requests==2.32.3 pandas==2.2.2 psycopg2-binary==2.9.9"
+    volumes:
+      - ./:/opt/project
+    command: >
+      bash -lc "python Scripts/extract_weather_open_meteo.py --cities 'Bruxelles' 'Anvers' 'Liège'"

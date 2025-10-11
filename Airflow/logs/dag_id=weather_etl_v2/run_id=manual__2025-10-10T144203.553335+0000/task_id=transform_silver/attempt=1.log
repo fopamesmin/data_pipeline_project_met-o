@@ -1,0 +1,31 @@
+[2025-10-10T14:42:10.983+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_etl_v2.transform_silver manual__2025-10-10T14:42:03.553335+00:00 [queued]>
+[2025-10-10T14:42:11.002+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_etl_v2.transform_silver manual__2025-10-10T14:42:03.553335+00:00 [queued]>
+[2025-10-10T14:42:11.003+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-10-10T14:42:11.044+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): transform_silver> on 2025-10-10 14:42:03.553335+00:00
+[2025-10-10T14:42:11.052+0000] {standard_task_runner.py:60} INFO - Started process 641 to run task
+[2025-10-10T14:42:11.056+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_etl_v2', 'transform_silver', 'manual__2025-10-10T14:42:03.553335+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/Airflow/dags/Airflow/dags/weather_etl_v2.py', '--cfg-path', '/tmp/tmpjpnl2l52']
+[2025-10-10T14:42:11.059+0000] {standard_task_runner.py:88} INFO - Job 13: Subtask transform_silver
+[2025-10-10T14:42:11.112+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-10T14:42:11.236+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_etl_v2.transform_silver manual__2025-10-10T14:42:03.553335+00:00 [running]> on host fd4a4f39ed6f
+[2025-10-10T14:42:11.512+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_etl_v2' AIRFLOW_CTX_TASK_ID='transform_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T14:42:03.553335+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-10T14:42:03.553335+00:00'
+[2025-10-10T14:42:11.516+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-10T14:42:11.517+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/project/Scripts/transform_weather_to_postgres.py --only-days 3']
+[2025-10-10T14:42:11.532+0000] {subprocess.py:86} INFO - Output:
+[2025-10-10T14:42:18.707+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-10-10T14:42:18.710+0000] {subprocess.py:93} INFO -   File "/opt/project/Scripts/transform_weather_to_postgres.py", line 92, in <module>
+[2025-10-10T14:42:18.711+0000] {subprocess.py:93} INFO -     def list_json_files(raw_root: Path, only_days: int) -> list[Path]:
+[2025-10-10T14:42:18.712+0000] {subprocess.py:93} INFO - TypeError: 'type' object is not subscriptable
+[2025-10-10T14:42:19.079+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-10T14:42:19.136+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-10T14:42:19.147+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=weather_etl_v2, task_id=transform_silver, execution_date=20251010T144203, start_date=20251010T144210, end_date=20251010T144219
+[2025-10-10T14:42:19.277+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 13 for task transform_silver (Bash command failed. The command returned a non-zero exit code 1.; 641)
+[2025-10-10T14:42:19.310+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-10T14:42:19.395+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,55 @@
+[2025-10-10T15:38:02.300+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_etl_v2.transform_silver manual__2025-10-10T15:37:52.486647+00:00 [queued]>
+[2025-10-10T15:38:02.317+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_etl_v2.transform_silver manual__2025-10-10T15:37:52.486647+00:00 [queued]>
+[2025-10-10T15:38:02.318+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-10-10T15:38:02.356+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): transform_silver> on 2025-10-10 15:37:52.486647+00:00
+[2025-10-10T15:38:02.369+0000] {standard_task_runner.py:60} INFO - Started process 345 to run task
+[2025-10-10T15:38:02.376+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_etl_v2', 'transform_silver', 'manual__2025-10-10T15:37:52.486647+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/Airflow/dags/Airflow/dags/weather_etl_v2.py', '--cfg-path', '/tmp/tmp_kpjfp9l']
+[2025-10-10T15:38:02.379+0000] {standard_task_runner.py:88} INFO - Job 21: Subtask transform_silver
+[2025-10-10T15:38:02.435+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-10T15:38:02.578+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_etl_v2.transform_silver manual__2025-10-10T15:37:52.486647+00:00 [running]> on host fd4a4f39ed6f
+[2025-10-10T15:38:02.927+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_etl_v2' AIRFLOW_CTX_TASK_ID='transform_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T15:37:52.486647+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-10T15:37:52.486647+00:00'
+[2025-10-10T15:38:02.931+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-10T15:38:02.933+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/project/Scripts/transform_weather_to_postgres.py --only-days 3']
+[2025-10-10T15:38:02.959+0000] {subprocess.py:86} INFO - Output:
+[2025-10-10T15:38:05.060+0000] {subprocess.py:93} INFO - [INFO] Fichiers détectés (18) sur 3 jour(s).
+[2025-10-10T15:38:05.061+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_124718.json -> 9 lignes
+[2025-10-10T15:38:05.062+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_143853.json -> 9 lignes
+[2025-10-10T15:38:05.063+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_144209.json -> 9 lignes
+[2025-10-10T15:38:05.064+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_152418.json -> 9 lignes
+[2025-10-10T15:38:05.065+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_153123.json -> 9 lignes
+[2025-10-10T15:38:05.066+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_153759.json -> 9 lignes
+[2025-10-10T15:38:05.067+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_124717.json -> 9 lignes
+[2025-10-10T15:38:05.068+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_143853.json -> 9 lignes
+[2025-10-10T15:38:05.069+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_144208.json -> 9 lignes
+[2025-10-10T15:38:05.070+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_152417.json -> 9 lignes
+[2025-10-10T15:38:05.071+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_153122.json -> 9 lignes
+[2025-10-10T15:38:05.072+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_153758.json -> 9 lignes
+[2025-10-10T15:38:05.073+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_124719.json -> 9 lignes
+[2025-10-10T15:38:05.074+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_143854.json -> 9 lignes
+[2025-10-10T15:38:05.076+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_144209.json -> 9 lignes
+[2025-10-10T15:38:05.077+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_152419.json -> 9 lignes
+[2025-10-10T15:38:05.078+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_153124.json -> 9 lignes
+[2025-10-10T15:38:05.079+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_153800.json -> 9 lignes
+[2025-10-10T15:38:05.080+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-10-10T15:38:05.082+0000] {subprocess.py:93} INFO -   File "/opt/project/Scripts/transform_weather_to_postgres.py", line 159, in <module>
+[2025-10-10T15:38:05.083+0000] {subprocess.py:93} INFO -     main()
+[2025-10-10T15:38:05.084+0000] {subprocess.py:93} INFO -   File "/opt/project/Scripts/transform_weather_to_postgres.py", line 148, in main
+[2025-10-10T15:38:05.085+0000] {subprocess.py:93} INFO -     conn = psycopg2.connect(host=args.pg_host, dbname=args.pg_db, user=args.pg_user, password=args.pg_pass)
+[2025-10-10T15:38:05.087+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+[2025-10-10T15:38:05.088+0000] {subprocess.py:93} INFO -     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[2025-10-10T15:38:05.089+0000] {subprocess.py:93} INFO - psycopg2.OperationalError: connection to server at "postgres_db" (172.18.0.2), port 5432 failed: FATAL:  database "dwh" does not exist
+[2025-10-10T15:38:05.090+0000] {subprocess.py:93} INFO - 
+[2025-10-10T15:38:05.201+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-10T15:38:05.247+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-10T15:38:05.255+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=weather_etl_v2, task_id=transform_silver, execution_date=20251010T153752, start_date=20251010T153802, end_date=20251010T153805
+[2025-10-10T15:38:05.305+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 21 for task transform_silver (Bash command failed. The command returned a non-zero exit code 1.; 345)
+[2025-10-10T15:38:05.324+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-10T15:38:05.391+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

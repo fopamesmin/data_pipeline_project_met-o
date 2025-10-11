@@ -1,0 +1,25 @@
+[2025-10-09T21:18:51.199+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_open_meteo_v1.run_extractor manual__2025-10-09T21:18:49.505781+00:00 [queued]>
+[2025-10-09T21:18:51.218+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_open_meteo_v1.run_extractor manual__2025-10-09T21:18:49.505781+00:00 [queued]>
+[2025-10-09T21:18:51.220+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-10-09T21:18:51.255+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): run_extractor> on 2025-10-09 21:18:49.505781+00:00
+[2025-10-09T21:18:51.266+0000] {standard_task_runner.py:60} INFO - Started process 189 to run task
+[2025-10-09T21:18:51.269+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'extract_open_meteo_v1', 'run_extractor', 'manual__2025-10-09T21:18:49.505781+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/Airflow/dags/extract_open_meteo_dag.py', '--cfg-path', '/tmp/tmpa98pn3xj']
+[2025-10-09T21:18:51.273+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask run_extractor
+[2025-10-09T21:18:51.330+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-09T21:18:51.440+0000] {task_command.py:423} INFO - Running <TaskInstance: extract_open_meteo_v1.run_extractor manual__2025-10-09T21:18:49.505781+00:00 [running]> on host 946eba861397
+[2025-10-09T21:18:51.717+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_open_meteo_v1' AIRFLOW_CTX_TASK_ID='run_extractor' AIRFLOW_CTX_EXECUTION_DATE='2025-10-09T21:18:49.505781+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-09T21:18:49.505781+00:00'
+[2025-10-09T21:18:51.719+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-09T21:18:51.720+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/project/Scripts/extract_weather_open_meteo.py --cities Bruxelles Anvers Liège']
+[2025-10-09T21:18:51.750+0000] {subprocess.py:86} INFO - Output:
+[2025-10-09T21:18:53.145+0000] {subprocess.py:93} INFO - Projet: /opt/project
+[2025-10-09T21:18:53.146+0000] {subprocess.py:93} INFO - Répertoire RAW: /opt/project/Data/raw
+[2025-10-09T21:18:53.147+0000] {subprocess.py:93} INFO - [GEO] Bruxelles -> Bruxelles (lat=50.85045, lon=4.34878)
+[2025-10-09T21:18:53.148+0000] {subprocess.py:93} INFO - [OK] Données sauvegardées: /opt/project/Data/raw/weather_Bruxelles_20251009_211852.json
+[2025-10-09T21:18:53.148+0000] {subprocess.py:93} INFO - [GEO] Anvers -> Anvers (lat=51.22047, lon=4.40026)
+[2025-10-09T21:18:53.149+0000] {subprocess.py:93} INFO - [OK] Données sauvegardées: /opt/project/Data/raw/weather_Anvers_20251009_211852.json
+[2025-10-09T21:18:53.150+0000] {subprocess.py:93} INFO - [GEO] Liège -> Liège (lat=50.63373, lon=5.56749)
+[2025-10-09T21:18:53.151+0000] {subprocess.py:93} INFO - [OK] Données sauvegardées: /opt/project/Data/raw/weather_Liège_20251009_211853.json
+[2025-10-09T21:18:53.172+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-09T21:18:53.286+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=extract_open_meteo_v1, task_id=run_extractor, execution_date=20251009T211849, start_date=20251009T211851, end_date=20251009T211853
+[2025-10-09T21:18:53.337+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-09T21:18:53.404+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

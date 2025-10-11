@@ -1,0 +1,378 @@
+[2025-10-10T15:52:24.959+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:52:24.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:52:24.968+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:52:24.967+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:52:25.068+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:52:25.542+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:52:25.542+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:52:25.634+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:52:25.634+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:52:25.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.783 seconds
+[2025-10-10T15:52:56.278+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:52:56.280+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:52:56.282+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:52:56.281+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:52:56.328+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:52:56.443+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:52:56.443+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:52:56.523+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:52:56.522+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:52:56.598+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.324 seconds
+[2025-10-10T15:53:26.986+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:53:26.988+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:53:26.990+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:53:26.989+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:53:27.024+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:53:27.095+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:53:27.094+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:53:27.147+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:53:27.146+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:53:27.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.253 seconds
+[2025-10-10T15:53:57.706+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:53:57.709+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:53:57.711+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:53:57.710+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:53:57.751+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:53:57.836+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:53:57.835+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:53:57.893+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:53:57.893+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:53:57.960+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.258 seconds
+[2025-10-10T15:54:28.587+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:54:28.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:54:28.614+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:54:28.612+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:54:28.817+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:54:28.942+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:54:28.942+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:54:29.023+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:54:29.022+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:54:29.113+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.609 seconds
+[2025-10-10T15:54:59.695+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:54:59.697+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:54:59.700+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:54:59.699+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:54:59.739+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:54:59.834+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:54:59.833+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:54:59.893+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:54:59.893+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:54:59.972+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.281 seconds
+[2025-10-10T15:55:30.567+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:55:30.569+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:55:30.576+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:55:30.574+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:55:30.643+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:55:30.745+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:55:30.745+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:55:30.824+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:55:30.823+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:55:30.909+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.350 seconds
+[2025-10-10T15:56:01.452+0000] {processor.py:161} INFO - Started process (PID=267) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:56:01.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:56:01.458+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:56:01.457+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:56:01.511+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:56:01.619+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:56:01.618+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:56:01.694+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:56:01.693+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:56:01.792+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.354 seconds
+[2025-10-10T15:56:32.240+0000] {processor.py:161} INFO - Started process (PID=277) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:56:32.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:56:32.245+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:56:32.244+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:56:32.296+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:56:32.410+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:56:32.410+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:56:32.494+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:56:32.493+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:56:32.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.345 seconds
+[2025-10-10T15:57:03.018+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:57:03.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:57:03.024+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:57:03.022+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:57:03.115+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:57:03.651+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:57:03.650+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:57:03.734+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:57:03.733+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:57:03.820+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.806 seconds
+[2025-10-10T15:57:34.369+0000] {processor.py:161} INFO - Started process (PID=297) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:57:34.371+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:57:34.375+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:57:34.373+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:57:34.412+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:57:34.474+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:57:34.474+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:57:34.524+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:57:34.524+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:57:34.594+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.229 seconds
+[2025-10-10T15:58:05.023+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:58:05.024+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:58:05.026+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:58:05.026+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:58:05.064+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:58:05.147+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:58:05.146+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:58:05.206+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:58:05.206+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:58:05.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.279 seconds
+[2025-10-10T15:58:35.776+0000] {processor.py:161} INFO - Started process (PID=317) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:58:35.778+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:58:35.781+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:58:35.780+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:58:35.823+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:58:35.942+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:58:35.941+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:58:36.021+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:58:36.020+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:58:36.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.342 seconds
+[2025-10-10T15:59:06.581+0000] {processor.py:161} INFO - Started process (PID=327) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:59:06.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:59:06.586+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:59:06.585+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:59:06.644+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:59:06.737+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:59:06.736+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:59:06.806+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:59:06.805+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:59:06.902+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.327 seconds
+[2025-10-10T15:59:37.365+0000] {processor.py:161} INFO - Started process (PID=337) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:59:37.367+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T15:59:37.370+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:59:37.369+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:59:37.421+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T15:59:37.503+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:59:37.503+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T15:59:37.564+0000] {logging_mixin.py:188} INFO - [2025-10-10T15:59:37.564+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T15:59:37.642+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.283 seconds
+[2025-10-10T16:00:08.157+0000] {processor.py:161} INFO - Started process (PID=347) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:00:08.159+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:00:08.162+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:00:08.161+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:00:08.209+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:00:08.308+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:00:08.307+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:00:08.394+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:00:08.393+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:00:08.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.352 seconds
+[2025-10-10T16:00:39.191+0000] {processor.py:161} INFO - Started process (PID=357) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:00:39.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:00:39.198+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:00:39.197+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:00:39.241+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:00:39.364+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:00:39.364+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:00:39.438+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:00:39.437+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:00:39.532+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.347 seconds
+[2025-10-10T16:01:10.043+0000] {processor.py:161} INFO - Started process (PID=367) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:01:10.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:01:10.048+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:01:10.047+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:01:10.099+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:01:10.188+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:01:10.187+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:01:10.258+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:01:10.258+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:01:10.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.356 seconds
+[2025-10-10T16:01:40.955+0000] {processor.py:161} INFO - Started process (PID=377) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:01:40.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:01:40.961+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:01:40.960+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:01:41.007+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:01:41.108+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:01:41.107+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:01:41.173+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:01:41.173+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:01:41.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.311 seconds
+[2025-10-10T16:02:11.746+0000] {processor.py:161} INFO - Started process (PID=387) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:02:11.749+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:02:11.753+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:02:11.752+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:02:11.806+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:02:11.917+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:02:11.917+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:02:11.993+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:02:11.993+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:02:12.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.371 seconds
+[2025-10-10T16:02:42.660+0000] {processor.py:161} INFO - Started process (PID=397) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:02:42.663+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:02:42.665+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:02:42.664+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:02:42.717+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:02:42.834+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:02:42.833+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:02:42.908+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:02:42.907+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:02:43.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.353 seconds
+[2025-10-10T16:03:13.573+0000] {processor.py:161} INFO - Started process (PID=407) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:03:13.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:03:13.603+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:03:13.602+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:03:13.732+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:03:14.027+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:03:14.018+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:03:14.197+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:03:14.196+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:03:14.293+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.731 seconds
+[2025-10-10T16:03:44.700+0000] {processor.py:161} INFO - Started process (PID=417) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:03:44.702+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:03:44.704+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:03:44.703+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:03:44.751+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:03:44.842+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:03:44.841+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:03:44.912+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:03:44.911+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:03:44.989+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.297 seconds
+[2025-10-10T16:04:15.446+0000] {processor.py:161} INFO - Started process (PID=427) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:04:15.448+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:04:15.451+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:04:15.450+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:04:15.492+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:04:15.581+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:04:15.581+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:04:15.639+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:04:15.639+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:04:15.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.284 seconds
+[2025-10-10T16:04:46.219+0000] {processor.py:161} INFO - Started process (PID=437) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:04:46.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:04:46.224+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:04:46.223+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:04:46.270+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:04:46.367+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:04:46.365+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:04:46.427+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:04:46.427+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:04:46.504+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.293 seconds
+[2025-10-10T16:05:16.979+0000] {processor.py:161} INFO - Started process (PID=447) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:05:16.983+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:05:16.987+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:05:16.985+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:05:17.048+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:05:17.165+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:05:17.165+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:05:17.241+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:05:17.240+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:05:17.340+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.368 seconds
+[2025-10-10T16:05:47.743+0000] {processor.py:161} INFO - Started process (PID=457) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:05:47.745+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:05:47.748+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:05:47.747+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:05:47.788+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:05:47.871+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:05:47.871+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:05:47.940+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:05:47.940+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:05:48.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.306 seconds
+[2025-10-10T16:06:18.503+0000] {processor.py:161} INFO - Started process (PID=467) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:06:18.505+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:06:18.507+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:06:18.506+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:06:18.547+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:06:18.633+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:06:18.633+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:06:18.718+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:06:18.717+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:06:18.821+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.323 seconds
+[2025-10-10T16:06:49.379+0000] {processor.py:161} INFO - Started process (PID=477) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:06:49.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:06:49.384+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:06:49.384+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:06:49.421+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:06:49.517+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:06:49.516+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:06:49.610+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:06:49.610+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:06:49.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.317 seconds
+[2025-10-10T16:07:20.175+0000] {processor.py:161} INFO - Started process (PID=487) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:07:20.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:07:20.180+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:07:20.179+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:07:20.223+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:07:20.319+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:07:20.318+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:07:20.398+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:07:20.397+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:07:20.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.335 seconds
+[2025-10-10T16:07:51.095+0000] {processor.py:161} INFO - Started process (PID=497) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:07:51.096+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:07:51.098+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:07:51.097+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:07:51.133+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:07:51.208+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:07:51.208+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:07:51.266+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:07:51.266+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:07:51.347+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.257 seconds
+[2025-10-10T16:08:21.699+0000] {processor.py:161} INFO - Started process (PID=507) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:08:21.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:08:21.704+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:08:21.703+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:08:21.741+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:08:21.819+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:08:21.819+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:08:21.874+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:08:21.874+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:08:21.931+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.235 seconds
+[2025-10-10T16:08:52.064+0000] {processor.py:161} INFO - Started process (PID=517) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:08:52.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:08:52.072+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:08:52.071+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:08:52.113+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:08:52.195+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:08:52.195+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:08:52.252+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:08:52.252+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:08:52.313+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.253 seconds
+[2025-10-10T16:09:22.662+0000] {processor.py:161} INFO - Started process (PID=527) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:09:22.664+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:09:22.667+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:09:22.666+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:09:22.702+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:09:22.776+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:09:22.776+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:09:22.827+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:09:22.827+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:09:22.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.229 seconds
+[2025-10-10T16:09:53.295+0000] {processor.py:161} INFO - Started process (PID=537) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:09:53.297+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:09:53.299+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:09:53.298+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:09:53.331+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:09:53.409+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:09:53.409+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:09:53.473+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:09:53.473+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:09:53.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.258 seconds
+[2025-10-10T16:10:24.361+0000] {processor.py:161} INFO - Started process (PID=547) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:10:24.371+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:10:24.377+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:10:24.375+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:10:24.457+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:10:24.596+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:10:24.595+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:10:24.685+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:10:24.685+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:10:24.751+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.398 seconds
+[2025-10-10T16:10:55.193+0000] {processor.py:161} INFO - Started process (PID=557) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:10:55.196+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:10:55.200+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:10:55.198+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:10:55.235+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:10:55.349+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:10:55.348+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:10:55.440+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:10:55.440+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:10:55.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.352 seconds
+[2025-10-10T16:11:25.884+0000] {processor.py:161} INFO - Started process (PID=567) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:11:25.886+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:11:25.890+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:11:25.889+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:11:25.939+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:11:26.056+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:11:26.056+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:11:26.119+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:11:26.119+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:11:26.188+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.312 seconds
+[2025-10-10T16:11:56.568+0000] {processor.py:161} INFO - Started process (PID=577) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:11:56.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:11:56.572+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:11:56.572+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:11:56.606+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:11:56.691+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:11:56.691+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:11:56.744+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:11:56.744+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:11:56.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.242 seconds
+[2025-10-10T16:12:27.348+0000] {processor.py:161} INFO - Started process (PID=587) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:12:27.350+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:12:27.352+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:12:27.352+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:12:27.396+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:12:27.480+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:12:27.480+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:12:27.541+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:12:27.540+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:12:27.609+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.268 seconds
+[2025-10-10T16:12:57.969+0000] {processor.py:161} INFO - Started process (PID=597) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:12:57.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:12:57.972+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:12:57.972+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:12:58.004+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:12:58.082+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:12:58.081+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:12:58.138+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:12:58.137+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:12:58.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.242 seconds
+[2025-10-10T16:13:28.610+0000] {processor.py:161} INFO - Started process (PID=607) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:13:28.612+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:13:28.615+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:13:28.614+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:13:28.660+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:13:28.735+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:13:28.734+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:13:28.797+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:13:28.797+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:13:28.869+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.264 seconds
+[2025-10-10T16:13:59.259+0000] {processor.py:161} INFO - Started process (PID=617) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:13:59.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:13:59.264+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:13:59.263+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:13:59.299+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:13:59.446+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:13:59.445+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:13:59.585+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:13:59.584+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:13:59.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.408 seconds
+[2025-10-10T16:14:30.272+0000] {processor.py:161} INFO - Started process (PID=627) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:14:30.273+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:14:30.275+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:14:30.274+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:14:30.304+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:14:30.497+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:14:30.496+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:14:30.546+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:14:30.545+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:14:31.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 1.029 seconds
+[2025-10-10T16:15:01.912+0000] {processor.py:161} INFO - Started process (PID=637) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:15:01.915+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:15:01.918+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:15:01.917+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:15:01.965+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:15:02.069+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:15:02.068+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:15:02.130+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:15:02.130+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:15:02.215+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.313 seconds
+[2025-10-10T16:15:32.576+0000] {processor.py:161} INFO - Started process (PID=647) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:15:32.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:15:32.579+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:15:32.579+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:15:32.614+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:15:32.680+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:15:32.680+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:15:32.735+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:15:32.735+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:15:32.802+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.229 seconds
+[2025-10-10T16:16:03.165+0000] {processor.py:161} INFO - Started process (PID=657) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:16:03.167+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:16:03.168+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:16:03.168+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:16:03.207+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:16:03.277+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:16:03.276+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:16:03.332+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:16:03.332+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:16:03.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.251 seconds
+[2025-10-10T16:16:33.803+0000] {processor.py:161} INFO - Started process (PID=667) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:16:33.804+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:16:33.806+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:16:33.805+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:16:33.836+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:16:33.897+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:16:33.896+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:16:33.947+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:16:33.947+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:16:34.029+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.231 seconds
+[2025-10-10T16:17:04.410+0000] {processor.py:161} INFO - Started process (PID=677) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:17:04.412+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:17:04.414+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:17:04.413+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:17:04.456+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:17:04.533+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:17:04.532+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:17:04.604+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:17:04.603+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:17:04.677+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.270 seconds
+[2025-10-10T16:17:35.086+0000] {processor.py:161} INFO - Started process (PID=687) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:17:35.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:17:35.090+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:17:35.090+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:17:35.127+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:17:35.194+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:17:35.194+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:17:35.257+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:17:35.256+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:17:35.335+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.253 seconds
+[2025-10-10T16:18:05.668+0000] {processor.py:161} INFO - Started process (PID=697) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:18:05.669+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:18:05.671+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:18:05.670+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:18:05.701+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:18:05.772+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:18:05.772+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:18:05.821+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:18:05.821+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:18:05.898+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.234 seconds
+[2025-10-10T16:18:36.271+0000] {processor.py:161} INFO - Started process (PID=707) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:18:36.273+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:18:36.276+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:18:36.275+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:18:36.312+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:18:36.379+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:18:36.379+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:18:36.430+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:18:36.430+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:18:36.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.234 seconds
+[2025-10-10T16:19:06.889+0000] {processor.py:161} INFO - Started process (PID=717) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:19:06.891+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T16:19:06.894+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:19:06.893+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:19:06.925+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T16:19:06.995+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:19:06.995+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T16:19:07.052+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:19:07.052+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T16:19:07.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 0.243 seconds
+[2025-10-10T19:19:22.674+0000] {processor.py:161} INFO - Started process (PID=729) to work on /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T19:19:22.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_etl_v2.py for tasks to queue
+[2025-10-10T19:19:22.728+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:19:22.726+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T19:19:23.829+0000] {processor.py:840} INFO - DAG(s) 'weather_etl_v2' retrieved from /opt/airflow/dags/weather_etl_v2.py
+[2025-10-10T19:19:25.950+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:19:25.949+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2025-10-10T19:19:26.935+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:19:26.934+0000] {dag.py:3834} INFO - Setting next_dagrun for weather_etl_v2 to 2025-10-09 22:00:00+00:00, run_after=2025-10-10 22:00:00+00:00
+[2025-10-10T19:19:27.248+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_etl_v2.py took 4.710 seconds
