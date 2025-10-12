@@ -1,0 +1,27 @@
+[2025-10-12T05:38:04.215+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_open_meteo_v2.run_extractor scheduled__2025-10-10T22:00:00+00:00 [queued]>
+[2025-10-12T05:38:04.306+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_open_meteo_v2.run_extractor scheduled__2025-10-10T22:00:00+00:00 [queued]>
+[2025-10-12T05:38:04.310+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-10-12T05:38:04.437+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): run_extractor> on 2025-10-10 22:00:00+00:00
+[2025-10-12T05:38:04.475+0000] {standard_task_runner.py:60} INFO - Started process 8563 to run task
+[2025-10-12T05:38:04.499+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'extract_open_meteo_v2', 'run_extractor', 'scheduled__2025-10-10T22:00:00+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/extract_open_meteo_dag.py', '--cfg-path', '/tmp/tmpzh5kke6n']
+[2025-10-12T05:38:04.516+0000] {standard_task_runner.py:88} INFO - Job 35: Subtask run_extractor
+[2025-10-12T05:38:05.075+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-12T05:38:06.706+0000] {task_command.py:423} INFO - Running <TaskInstance: extract_open_meteo_v2.run_extractor scheduled__2025-10-10T22:00:00+00:00 [running]> on host fd4a4f39ed6f
+[2025-10-12T05:38:08.969+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_open_meteo_v2' AIRFLOW_CTX_TASK_ID='run_extractor' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T22:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-10T22:00:00+00:00'
+[2025-10-12T05:38:08.997+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-12T05:38:09.003+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/project/Scripts/extract_weather_open_meteo.py --cities Bruxelles Anvers Liège --past-days 2 --forecast-days 7 --keep-days 14']
+[2025-10-12T05:38:09.214+0000] {subprocess.py:86} INFO - Output:
+[2025-10-12T05:38:17.185+0000] {subprocess.py:93} INFO - [INFO] Projet        : /opt/project
+[2025-10-12T05:38:17.194+0000] {subprocess.py:93} INFO - [INFO] RAW root      : /opt/project/Data/raw
+[2025-10-12T05:38:17.203+0000] {subprocess.py:93} INFO - [INFO] Dossier du jour: /opt/project/Data/raw/2025-10-12
+[2025-10-12T05:38:17.206+0000] {subprocess.py:93} INFO - [GEO] Bruxelles -> Bruxelles (lat=50.85045, lon=4.34878)
+[2025-10-12T05:38:17.210+0000] {subprocess.py:93} INFO - [OK] Données sauvegardées: /opt/project/Data/raw/2025-10-12/Bruxelles_053814.json
+[2025-10-12T05:38:17.213+0000] {subprocess.py:93} INFO - [GEO] Anvers -> Anvers (lat=51.22047, lon=4.40026)
+[2025-10-12T05:38:17.217+0000] {subprocess.py:93} INFO - [OK] Données sauvegardées: /opt/project/Data/raw/2025-10-12/Anvers_053816.json
+[2025-10-12T05:38:17.220+0000] {subprocess.py:93} INFO - [GEO] Liège -> Liège (lat=50.63373, lon=5.56749)
+[2025-10-12T05:38:17.225+0000] {subprocess.py:93} INFO - [OK] Données sauvegardées: /opt/project/Data/raw/2025-10-12/Liège_053817.json
+[2025-10-12T05:38:17.229+0000] {subprocess.py:93} INFO - [CLEAN] Dossiers de date supprimés (> 14 jours): 0
+[2025-10-12T05:38:17.317+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-12T05:38:18.091+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=extract_open_meteo_v2, task_id=run_extractor, execution_date=20251010T220000, start_date=20251012T053804, end_date=20251012T053818
+[2025-10-12T05:38:18.240+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-12T05:38:18.429+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
