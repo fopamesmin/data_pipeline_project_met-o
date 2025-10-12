@@ -55,4 +55,41 @@ data_pipeline_project/
 
 git clone https://github.com/<your-username>/belgian-weather-pipeline.git
 cd belgian-weather-pipeline
+
 2️⃣ Launch the environment
+docker compose up -d --remove-orphans
+
+Services started:
+
+Airflow Web UI → http://localhost:8080
+
+☁️ ETL Workflow
+🥉 Bronze – Extract
+
+Fetches weather data from the Open-Meteo API for multiple Belgian cities.
+Files are stored in Data/raw/YYYY-MM-DD/{City}_{Timestamp}.json.
+
+Example command:
+
+docker compose run --rm etl-worker bash -lc \
+"python Scripts/extract_weather_open_meteo.py --cities Bruxelles Anvers Liège --keep-days 14"
+🥈 Silver – Transform
+
+Reads the raw JSON files, cleans and aggregates daily values,
+and loads them into PostgreSQL table silver.weather_daily.
+
+Example command:
+docker compose run --rm etl-worker bash -lc \
+"python Scripts/transform_weather_to_postgres.py --only-days 3"
+
+| Column             | Type   | Description                   |
+| ------------------ | ------ | ----------------------------- |
+| date               | DATE   | Observation date              |
+| city               | TEXT   | City name                     |
+| temperature_2m_max | DOUBLE | Daily max temperature         |
+| temperature_2m_min | DOUBLE | Daily min temperature         |
+| precipitation_sum  | DOUBLE | Daily total precipitation     |
+| wind_speed_10m_max | DOUBLE | Daily max wind speed          |
+| temp_range         | DOUBLE | Temperature range (max − min) |
+
+
