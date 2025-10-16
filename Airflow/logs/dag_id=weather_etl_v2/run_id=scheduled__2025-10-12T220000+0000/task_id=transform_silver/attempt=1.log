@@ -1,0 +1,24 @@
+[2025-10-16T18:18:40.749+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_etl_v2.transform_silver scheduled__2025-10-12T22:00:00+00:00 [queued]>
+[2025-10-16T18:18:40.772+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_etl_v2.transform_silver scheduled__2025-10-12T22:00:00+00:00 [queued]>
+[2025-10-16T18:18:40.773+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-10-16T18:18:40.801+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): transform_silver> on 2025-10-12 22:00:00+00:00
+[2025-10-16T18:18:40.810+0000] {standard_task_runner.py:60} INFO - Started process 205 to run task
+[2025-10-16T18:18:40.814+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_etl_v2', 'transform_silver', 'scheduled__2025-10-12T22:00:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/weather_etl_v2.py', '--cfg-path', '/tmp/tmpwdpnoexn']
+[2025-10-16T18:18:40.817+0000] {standard_task_runner.py:88} INFO - Job 53: Subtask transform_silver
+[2025-10-16T18:18:40.873+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-16T18:18:41.025+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_etl_v2.transform_silver scheduled__2025-10-12T22:00:00+00:00 [running]> on host fd4a4f39ed6f
+[2025-10-16T18:18:41.375+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_etl_v2' AIRFLOW_CTX_TASK_ID='transform_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-10-12T22:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-12T22:00:00+00:00'
+[2025-10-16T18:18:41.379+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-16T18:18:41.380+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/project/Scripts/transform_weather_to_postgres.py --only-days 3']
+[2025-10-16T18:18:41.396+0000] {subprocess.py:86} INFO - Output:
+[2025-10-16T18:18:43.550+0000] {subprocess.py:93} INFO - [INFO] Fichiers détectés (5) sur 3 jour(s).
+[2025-10-16T18:18:43.551+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-13/Anvers_082229.json -> 9 lignes
+[2025-10-16T18:18:43.552+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-13/Liège_082232.json -> 9 lignes
+[2025-10-16T18:18:43.554+0000] {subprocess.py:93} INFO - [ERR] /opt/project/Data/raw/2025-10-16/Anvers_181838.json : Expecting ',' delimiter: line 414 column 9 (char 8183)
+[2025-10-16T18:18:43.555+0000] {subprocess.py:93} INFO - [ERR] /opt/project/Data/raw/2025-10-16/Bruxelles_181837.json : Extra data: line 1172 column 2 (char 16704)
+[2025-10-16T18:18:43.556+0000] {subprocess.py:93} INFO - [ERR] /opt/project/Data/raw/2025-10-16/Liège_181839.json : Extra data: line 1172 column 2 (char 16694)
+[2025-10-16T18:18:43.557+0000] {subprocess.py:93} INFO - [LOAD] 18 ligne(s) upsert dans dwh.silver.weather_daily
+[2025-10-16T18:18:43.747+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-16T18:18:43.901+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=weather_etl_v2, task_id=transform_silver, execution_date=20251012T220000, start_date=20251016T181840, end_date=20251016T181843
+[2025-10-16T18:18:43.965+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-16T18:18:44.034+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

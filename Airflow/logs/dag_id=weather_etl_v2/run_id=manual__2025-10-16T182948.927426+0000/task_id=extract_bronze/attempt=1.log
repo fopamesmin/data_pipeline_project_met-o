@@ -1,0 +1,27 @@
+[2025-10-16T18:29:50.627+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_etl_v2.extract_bronze manual__2025-10-16T18:29:48.927426+00:00 [queued]>
+[2025-10-16T18:29:50.651+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_etl_v2.extract_bronze manual__2025-10-16T18:29:48.927426+00:00 [queued]>
+[2025-10-16T18:29:50.653+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-10-16T18:29:50.701+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): extract_bronze> on 2025-10-16 18:29:48.927426+00:00
+[2025-10-16T18:29:50.711+0000] {standard_task_runner.py:60} INFO - Started process 563 to run task
+[2025-10-16T18:29:50.717+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_etl_v2', 'extract_bronze', 'manual__2025-10-16T18:29:48.927426+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/weather_etl_v2.py', '--cfg-path', '/tmp/tmpg2tt4ymr']
+[2025-10-16T18:29:50.721+0000] {standard_task_runner.py:88} INFO - Job 55: Subtask extract_bronze
+[2025-10-16T18:29:50.803+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-16T18:29:50.994+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_etl_v2.extract_bronze manual__2025-10-16T18:29:48.927426+00:00 [running]> on host fd4a4f39ed6f
+[2025-10-16T18:29:51.394+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_etl_v2' AIRFLOW_CTX_TASK_ID='extract_bronze' AIRFLOW_CTX_EXECUTION_DATE='2025-10-16T18:29:48.927426+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-16T18:29:48.927426+00:00'
+[2025-10-16T18:29:51.398+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-16T18:29:51.399+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/project/Scripts/extract_weather_open_meteo.py --cities Bruxelles Anvers Liège --past-days 2 --forecast-days 7 --keep-days 14']
+[2025-10-16T18:29:51.411+0000] {subprocess.py:86} INFO - Output:
+[2025-10-16T18:29:54.917+0000] {subprocess.py:93} INFO - [INFO] Projet        : /opt/project
+[2025-10-16T18:29:54.919+0000] {subprocess.py:93} INFO - [INFO] RAW root      : /opt/project/Data/raw
+[2025-10-16T18:29:54.921+0000] {subprocess.py:93} INFO - [INFO] Dossier du jour: /opt/project/Data/raw/2025-10-16
+[2025-10-16T18:29:54.922+0000] {subprocess.py:93} INFO - [GEO] Bruxelles -> Bruxelles (lat=50.85045, lon=4.34878)
+[2025-10-16T18:29:54.928+0000] {subprocess.py:93} INFO - [OK] Données sauvegardées: /opt/project/Data/raw/2025-10-16/Bruxelles_182952.json
+[2025-10-16T18:29:54.929+0000] {subprocess.py:93} INFO - [GEO] Anvers -> Anvers (lat=51.22047, lon=4.40026)
+[2025-10-16T18:29:54.931+0000] {subprocess.py:93} INFO - [OK] Données sauvegardées: /opt/project/Data/raw/2025-10-16/Anvers_182953.json
+[2025-10-16T18:29:54.932+0000] {subprocess.py:93} INFO - [GEO] Liège -> Liège (lat=50.63373, lon=5.56749)
+[2025-10-16T18:29:54.933+0000] {subprocess.py:93} INFO - [OK] Données sauvegardées: /opt/project/Data/raw/2025-10-16/Liège_182954.json
+[2025-10-16T18:29:54.936+0000] {subprocess.py:93} INFO - [CLEAN] Dossiers de date supprimés (> 14 jours): 0
+[2025-10-16T18:29:54.954+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-16T18:29:55.135+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=weather_etl_v2, task_id=extract_bronze, execution_date=20251016T182948, start_date=20251016T182950, end_date=20251016T182955
+[2025-10-16T18:29:55.201+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-16T18:29:55.301+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,65 @@
+[2025-10-12T05:38:19.893+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_etl_v2.transform_silver scheduled__2025-10-10T22:00:00+00:00 [queued]>
+[2025-10-12T05:38:19.918+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_etl_v2.transform_silver scheduled__2025-10-10T22:00:00+00:00 [queued]>
+[2025-10-12T05:38:19.921+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-10-12T05:38:19.972+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): transform_silver> on 2025-10-10 22:00:00+00:00
+[2025-10-12T05:38:19.989+0000] {standard_task_runner.py:60} INFO - Started process 8568 to run task
+[2025-10-12T05:38:19.998+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_etl_v2', 'transform_silver', 'scheduled__2025-10-10T22:00:00+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/weather_etl_v2.py', '--cfg-path', '/tmp/tmp9328rv25']
+[2025-10-12T05:38:20.003+0000] {standard_task_runner.py:88} INFO - Job 36: Subtask transform_silver
+[2025-10-12T05:38:20.084+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-12T05:38:20.277+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_etl_v2.transform_silver scheduled__2025-10-10T22:00:00+00:00 [running]> on host fd4a4f39ed6f
+[2025-10-12T05:38:20.667+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_etl_v2' AIRFLOW_CTX_TASK_ID='transform_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T22:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-10T22:00:00+00:00'
+[2025-10-12T05:38:20.670+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-12T05:38:20.671+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/project/Scripts/transform_weather_to_postgres.py --only-days 3']
+[2025-10-12T05:38:20.694+0000] {subprocess.py:86} INFO - Output:
+[2025-10-12T05:38:25.168+0000] {subprocess.py:93} INFO - [INFO] Fichiers détectés (46) sur 3 jour(s).
+[2025-10-12T05:38:25.169+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_124718.json -> 9 lignes
+[2025-10-12T05:38:25.170+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_143853.json -> 9 lignes
+[2025-10-12T05:38:25.171+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_144209.json -> 9 lignes
+[2025-10-12T05:38:25.172+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_152418.json -> 9 lignes
+[2025-10-12T05:38:25.172+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_153123.json -> 9 lignes
+[2025-10-12T05:38:25.173+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_153759.json -> 9 lignes
+[2025-10-12T05:38:25.174+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_154611.json -> 9 lignes
+[2025-10-12T05:38:25.175+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_155302.json -> 9 lignes
+[2025-10-12T05:38:25.175+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Anvers_155315.json -> 9 lignes
+[2025-10-12T05:38:25.176+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_124717.json -> 9 lignes
+[2025-10-12T05:38:25.178+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_143853.json -> 9 lignes
+[2025-10-12T05:38:25.179+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_144208.json -> 9 lignes
+[2025-10-12T05:38:25.180+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_152417.json -> 9 lignes
+[2025-10-12T05:38:25.181+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_153122.json -> 9 lignes
+[2025-10-12T05:38:25.182+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_153758.json -> 9 lignes
+[2025-10-12T05:38:25.184+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_154610.json -> 9 lignes
+[2025-10-12T05:38:25.185+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_155301.json -> 9 lignes
+[2025-10-12T05:38:25.187+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Bruxelles_155314.json -> 9 lignes
+[2025-10-12T05:38:25.188+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_124719.json -> 9 lignes
+[2025-10-12T05:38:25.189+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_143854.json -> 9 lignes
+[2025-10-12T05:38:25.190+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_144209.json -> 9 lignes
+[2025-10-12T05:38:25.191+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_152419.json -> 9 lignes
+[2025-10-12T05:38:25.192+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_153124.json -> 9 lignes
+[2025-10-12T05:38:25.193+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_153800.json -> 9 lignes
+[2025-10-12T05:38:25.193+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_154612.json -> 9 lignes
+[2025-10-12T05:38:25.195+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_155303.json -> 9 lignes
+[2025-10-12T05:38:25.196+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-10/Liège_155316.json -> 9 lignes
+[2025-10-12T05:38:25.197+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Anvers_074051.json -> 9 lignes
+[2025-10-12T05:38:25.198+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Anvers_075430.json -> 9 lignes
+[2025-10-12T05:38:25.198+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Anvers_090517.json -> 9 lignes
+[2025-10-12T05:38:25.199+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Anvers_113202.json -> 9 lignes
+[2025-10-12T05:38:25.200+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Anvers_122427.json -> 9 lignes
+[2025-10-12T05:38:25.201+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Bruxelles_074050.json -> 9 lignes
+[2025-10-12T05:38:25.202+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Bruxelles_075430.json -> 9 lignes
+[2025-10-12T05:38:25.203+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Bruxelles_090517.json -> 9 lignes
+[2025-10-12T05:38:25.205+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Bruxelles_113201.json -> 9 lignes
+[2025-10-12T05:38:25.206+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Bruxelles_122426.json -> 9 lignes
+[2025-10-12T05:38:25.207+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Liège_074051.json -> 9 lignes
+[2025-10-12T05:38:25.208+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Liège_075431.json -> 9 lignes
+[2025-10-12T05:38:25.209+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Liège_090518.json -> 9 lignes
+[2025-10-12T05:38:25.210+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Liège_113203.json -> 9 lignes
+[2025-10-12T05:38:25.211+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-11/Liège_122428.json -> 9 lignes
+[2025-10-12T05:38:25.212+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-12/Anvers_053816.json -> 9 lignes
+[2025-10-12T05:38:25.213+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-12/Bruxelles_053814.json -> 9 lignes
+[2025-10-12T05:38:25.216+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-12/Bruxelles_053815.json -> 9 lignes
+[2025-10-12T05:38:25.217+0000] {subprocess.py:93} INFO - [OK] /opt/project/Data/raw/2025-10-12/Liège_053817.json -> 9 lignes
+[2025-10-12T05:38:25.218+0000] {subprocess.py:93} INFO - [LOAD] 33 ligne(s) upsert dans dwh.silver.weather_daily
+[2025-10-12T05:38:25.322+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-12T05:38:25.453+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=weather_etl_v2, task_id=transform_silver, execution_date=20251010T220000, start_date=20251012T053819, end_date=20251012T053825
+[2025-10-12T05:38:25.520+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-12T05:38:25.580+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

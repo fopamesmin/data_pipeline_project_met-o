@@ -1,0 +1,23 @@
+[2025-10-12T14:13:16.296+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_gold_v1.aggregate_gold scheduled__2025-10-05T00:00:00+00:00 [queued]>
+[2025-10-12T14:13:16.317+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_gold_v1.aggregate_gold scheduled__2025-10-05T00:00:00+00:00 [queued]>
+[2025-10-12T14:13:16.318+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-10-12T14:13:16.350+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): aggregate_gold> on 2025-10-05 00:00:00+00:00
+[2025-10-12T14:13:16.364+0000] {standard_task_runner.py:60} INFO - Started process 1726 to run task
+[2025-10-12T14:13:16.371+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_gold_v1', 'aggregate_gold', 'scheduled__2025-10-05T00:00:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/weather_gold_v1.py', '--cfg-path', '/tmp/tmp2s4iz7m8']
+[2025-10-12T14:13:16.376+0000] {standard_task_runner.py:88} INFO - Job 40: Subtask aggregate_gold
+[2025-10-12T14:13:16.453+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-12T14:13:16.599+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_gold_v1.aggregate_gold scheduled__2025-10-05T00:00:00+00:00 [running]> on host fd4a4f39ed6f
+[2025-10-12T14:13:17.042+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_gold_v1' AIRFLOW_CTX_TASK_ID='aggregate_gold' AIRFLOW_CTX_EXECUTION_DATE='2025-10-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-05T00:00:00+00:00'
+[2025-10-12T14:13:17.051+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-12T14:13:17.051+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/project/Scripts/load_gold_weather_kpi.py']
+[2025-10-12T14:13:17.093+0000] {subprocess.py:86} INFO - Output:
+[2025-10-12T14:13:22.494+0000] {subprocess.py:93} INFO - /opt/project/Scripts/load_gold_weather_kpi.py:29: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-10-12T14:13:22.496+0000] {subprocess.py:93} INFO -   df = pd.read_sql(query, conn)
+[2025-10-12T14:13:22.498+0000] {subprocess.py:93} INFO - [INFO] Connexion à la base dwh...
+[2025-10-12T14:13:22.499+0000] {subprocess.py:93} INFO - [INFO] 33 lignes récupérées de la couche Silver.
+[2025-10-12T14:13:22.501+0000] {subprocess.py:93} INFO - [LOAD] Insertion de 6 lignes dans gold.weather_kpi...
+[2025-10-12T14:13:22.502+0000] {subprocess.py:93} INFO - [OK] Données Gold insérées avec succès.
+[2025-10-12T14:13:22.777+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-12T14:13:22.953+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=weather_gold_v1, task_id=aggregate_gold, execution_date=20251005T000000, start_date=20251012T141316, end_date=20251012T141322
+[2025-10-12T14:13:23.021+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-12T14:13:23.111+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
